@@ -32,4 +32,4 @@ function pick(low, high, step) {
   return a.pick(step);
 }
 
-console.log(pick(1, 100, 8));
+console.log(pick(1, 40, 7));
