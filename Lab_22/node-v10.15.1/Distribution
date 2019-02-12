@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<installer-gui-script minSpecVersion="1">
+    <title>Node.js</title>
+    <welcome file="welcome.html"/>
+    <conclusion file="conclusion.html"/>
+    <background alignment="topleft" file="osx_installer_logo.png"/>
+    <pkg-ref id="org.nodejs.node.pkg" auth="root">
+        <bundle-version/>
+    </pkg-ref>
+    <pkg-ref id="org.nodejs.npm.pkg" auth="root">
+        <bundle-version/>
+    </pkg-ref>
+    <options customize="allow" require-scripts="false"/>
+    <license file="license.rtf"/>
+    <choices-outline>
+        <line choice="org.nodejs.node.pkg"/>
+        <line choice="org.nodejs.npm.pkg"/>
+    </choices-outline>
+    <choice id="org.nodejs.node.pkg" visible="true" title="Node.js v10.15.1">
+        <pkg-ref id="org.nodejs.node.pkg"/>
+    </choice>
+    <pkg-ref id="org.nodejs.node.pkg" version="v10.15.1" onConclusion="none" installKBytes="42131">#node-v10.15.1.pkg</pkg-ref>
+    <choice id="org.nodejs.npm.pkg" visible="true" title="npm v6.4.1">
+        <pkg-ref id="org.nodejs.npm.pkg"/>
+    </choice>
+    <pkg-ref id="org.nodejs.npm.pkg" version="v6.4.1" onConclusion="none" installKBytes="16846">#npm-v6.4.1.pkg</pkg-ref>
+</installer-gui-script>

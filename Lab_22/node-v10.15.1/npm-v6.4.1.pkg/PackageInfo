@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<pkg-info overwrite-permissions="true" relocatable="false" identifier="org.nodejs.npm.pkg" postinstall-action="none" version="v6.4.1" format-version="2" generator-version="InstallCmds-502 (14F2511)" auth="root">
+    <payload numberOfFiles="3961" installKBytes="16846"/>
+    <bundle-version/>
+    <upgrade-bundle/>
+    <update-bundle/>
+    <atomic-update-bundle/>
+    <strict-identifier/>
+    <relocate/>
+    <scripts>
+        <preinstall file="./preinstall"/>
+        <postinstall file="./postinstall"/>
+    </scripts>
+</pkg-info>
